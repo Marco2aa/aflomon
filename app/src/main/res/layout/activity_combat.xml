@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activite.CombatActivity">
+
+    <ImageView
+        android:id="@+id/iv_aflomon_moi"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.109"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.833"
+        app:srcCompat="@drawable/salameche" />
+
+    <TextView
+        android:id="@+id/tv_pv_moi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="50/50"
+        app:layout_constraintEnd_toEndOf="@+id/pb_pv_moi"
+        app:layout_constraintHorizontal_bias="0.693"
+        app:layout_constraintStart_toStartOf="@+id/pb_pv_moi"
+        app:layout_constraintTop_toBottomOf="@+id/pb_pv_moi" />
+
+    <ProgressBar
+        android:id="@+id/pb_pv_moi"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="#004CAF50"
+        android:backgroundTint="#004CAF50"
+        android:maxWidth="100dip"
+        android:minWidth="100dip"
+        android:progress="100"
+        android:progressTint="#4CAF50"
+        app:layout_constraintEnd_toEndOf="@+id/tv_nom_moi"
+        app:layout_constraintHorizontal_bias="0.521"
+        app:layout_constraintStart_toStartOf="@+id/tv_nom_moi"
+        app:layout_constraintTop_toBottomOf="@+id/tv_nom_moi" />
+
+    <TextView
+        android:id="@+id/tv_nom_moi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Salamouche"
+        app:layout_constraintEnd_toEndOf="@+id/iv_aflomon_moi"
+        app:layout_constraintHorizontal_bias="0.391"
+        app:layout_constraintStart_toStartOf="@+id/iv_aflomon_moi"
+        app:layout_constraintTop_toBottomOf="@+id/iv_aflomon_moi" />
+
+    <ImageView
+        android:id="@+id/iv_aflomon_ennemi"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.842"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.114"
+        app:srcCompat="@drawable/carapuce" />
+
+    <TextView
+        android:id="@+id/tv_nom_ennemi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Carapupuce"
+        app:layout_constraintEnd_toEndOf="@+id/iv_aflomon_ennemi"
+        app:layout_constraintStart_toStartOf="@+id/iv_aflomon_ennemi"
+        app:layout_constraintTop_toBottomOf="@+id/iv_aflomon_ennemi" />
+
+    <ProgressBar
+        android:id="@+id/pb_pv_ennemi"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:maxWidth="100dip"
+        android:minWidth="100dip"
+        android:progress="100"
+        android:progressTint="#4CAF50"
+        app:layout_constraintEnd_toEndOf="@+id/tv_nom_ennemi"
+        app:layout_constraintStart_toStartOf="@+id/tv_nom_ennemi"
+        app:layout_constraintTop_toBottomOf="@+id/tv_nom_ennemi" />
+
+    <TextView
+        android:id="@+id/tv_pv_ennemi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="50/50"
+        app:layout_constraintEnd_toEndOf="@+id/pb_pv_ennemi"
+        app:layout_constraintStart_toStartOf="@+id/pb_pv_ennemi"
+        app:layout_constraintTop_toBottomOf="@+id/pb_pv_ennemi" />
+
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:numColumns="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/iv_aflomon_moi"
+        app:layout_constraintTop_toTopOf="@+id/iv_aflomon_moi"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tv_victoire"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="rejouer"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_victoire" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Switch"
+        app:layout_constraintBottom_toTopOf="@+id/gridview"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

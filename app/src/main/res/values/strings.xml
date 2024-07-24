@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Dice</string>
+    <string name="de_6">Dé à 6 faces</string>
+    <string name="de_20">Dé à 20 faces</string>
+    <string name="lancer_de">Lancer le dé</string>
+    <string name="title_activity_compose">ComposeActivity</string>
+</resources>
